@@ -409,38 +409,45 @@ h1, h2, h3, h4, h5, h6 {
 /* Staggered spelling-order delay for drawing, synchronized delay for flickering */
 .path-c { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillC 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.1s, 2.8s; 
+             flickerLoop 0.37s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.1s, 2.8s, 4.4s; 
 }
 .path-a1 { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillA1 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.3s, 2.8s; 
+             flickerLoop 0.47s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.3s, 2.85s, 4.4s; 
 }
 .path-m { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillM 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.5s, 2.8s; 
+             flickerLoop 0.41s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.5s, 2.9s, 4.4s; 
 }
 .path-e { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillE 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.7s, 2.8s; 
+             flickerLoop 0.53s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.7s, 2.82s, 4.4s; 
 }
 .path-l { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillL 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.9s, 2.8s; 
+             flickerLoop 0.31s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 0.9s, 2.87s, 4.4s; 
 }
 .path-i { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillI 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 1.1s, 2.8s; 
+             flickerLoop 0.59s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1.1s, 2.93s, 4.4s; 
 }
 .path-a2 { 
   animation: drawLogoOutline 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
-             flickerAndFillA2 2.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 1.3s, 2.8s; 
+             flickerLoop 0.43s linear infinite,
+             fillAndShrinkLogo 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: 1.3s, 2.84s, 4.4s; 
 }
 
 @keyframes drawLogoOutline {
@@ -458,123 +465,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes flickerAndFillC {
-  0% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  6% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  12% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  20% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  26% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  34% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  42% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  48% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  56% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  64% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  72% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA - FASE 3: Colore fisso dei bordi */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  /* FASE 4: Riempimento bianco molto rapido (da 91% a 95% - soli 80ms) */
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-}
-
-@keyframes flickerAndFillA1 {
-  0% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  8% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  15% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  22% {
+@keyframes flickerLoop {
+  0%, 100% {
     fill-opacity: 0;
     stroke: var(--accent-yellow);
     stroke-width: 2.5px;
@@ -582,299 +474,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   30% {
     fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  38% {
-    fill-opacity: 0;
     stroke: var(--accent-yellow);
     stroke-width: 2.5px;
     filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
+  }
+  35% {
+    fill-opacity: 0;
+    stroke: rgba(250, 255, 0, 0.25);
+    stroke-width: 2.5px;
+    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
   }
   45% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  52% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  60% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  68% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  75% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-}
-
-@keyframes flickerAndFillM {
-  0% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  10% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  18% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  25% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  32% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  40% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  48% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  56% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  62% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  70% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  76% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-}
-
-@keyframes flickerAndFillE {
-  0% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  7% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  14% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  23% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  31% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  39% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  46% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  54% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  63% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  71% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  77% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-}
-
-@keyframes flickerAndFillL {
-  0% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  9% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  16% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  24% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  33% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  41% {
     fill-opacity: 0;
     stroke: rgba(250, 255, 0, 0.25);
     stroke-width: 2.5px;
@@ -886,243 +496,53 @@ h1, h2, h3, h4, h5, h6 {
     stroke-width: 2.5px;
     filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
   }
-  58% {
+  65% {
+    fill-opacity: 0;
+    stroke: var(--accent-yellow);
+    stroke-width: 2.5px;
+    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
+  }
+  70% {
     fill-opacity: 0;
     stroke: rgba(250, 255, 0, 0.35);
     stroke-width: 2.5px;
     filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  66% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  73% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  78% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
   }
   80% {
     fill-opacity: 0;
-    stroke: var(--accent-yellow);
+    stroke: rgba(250, 255, 0, 0.35);
     stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
+    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
   }
-  /* CONVERGENZA */
-  83%, 91% {
+  85% {
     fill-opacity: 0;
     stroke: var(--accent-yellow);
     stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
+    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
   }
 }
 
-@keyframes flickerAndFillI {
-  0% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  5% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  12% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  21% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  29% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  37% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  44% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  51% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  59% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  67% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  74% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
-  }
-  93% {
-    fill-opacity: 0.5;
-    fill: #ffffff;
-    stroke: var(--accent-yellow);
-    stroke-width: 2px;
-    filter: drop-shadow(0 0 5px var(--accent-yellow));
-  }
-  95%, 100% {
-    fill-opacity: 1;
-    fill: #ffffff;
-    stroke: transparent;
-    stroke-width: 0;
-    filter: drop-shadow(0 0 0px transparent);
-  }
-}
-
-@keyframes flickerAndFillA2 {
+@keyframes fillAndShrinkLogo {
   0% {
     fill-opacity: 0;
     stroke: var(--accent-yellow);
     stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  11% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  19% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  27% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
+    filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
   }
   35% {
     fill-opacity: 0;
     stroke: var(--accent-yellow);
     stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  43% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  53% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  61% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.25);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2px rgba(250, 255, 0, 0.25));
-  }
-  69% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  75% {
-    fill-opacity: 0;
-    stroke: rgba(250, 255, 0, 0.35);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 2.5px rgba(250, 255, 0, 0.35));
-  }
-  79% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  80% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
-    filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 25px var(--accent-yellow)) drop-shadow(0 0 45px var(--accent-yellow));
-  }
-  /* CONVERGENZA */
-  83%, 91% {
-    fill-opacity: 0;
-    stroke: var(--accent-yellow);
-    stroke-width: 2.5px;
     filter: drop-shadow(0 0 10px var(--accent-yellow)) drop-shadow(0 0 30px var(--accent-yellow)) drop-shadow(0 0 55px var(--accent-yellow));
   }
-  93% {
+  50% {
     fill-opacity: 0.5;
     fill: #ffffff;
     stroke: var(--accent-yellow);
     stroke-width: 2px;
     filter: drop-shadow(0 0 5px var(--accent-yellow));
   }
-  95%, 100% {
+  60%, 100% {
     fill-opacity: 1;
     fill: #ffffff;
     stroke: transparent;
@@ -1130,6 +550,7 @@ h1, h2, h3, h4, h5, h6 {
     filter: drop-shadow(0 0 0px transparent);
   }
 }
+
 
 /* Epigrafe CEO */
 .hero-epigraph {
