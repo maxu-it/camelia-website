@@ -1,0 +1,484 @@
+[
+  {
+    "id": "1",
+    "title": "G.R.A.",
+    "category": "tv-cinema",
+    "director": "Luca Moretti",
+    "client": "",
+    "year": "2024",
+    "vimeoId": "cameliapictures/gracamelia",
+    "thumbnail": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un cortometraggio atmosferico che esplora le storie incrociate degli automobilisti lungo il Grande Raccordo Anulare di Roma durante le ore più buie della notte.",
+    "description_en": "An atmospheric short film exploring the intersecting lives of drivers along Rome's orbital highway (G.R.A.) during the deepest hours of the night.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Giulia Neri",
+      "Colorist": "Vincenzo Carbone"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Coscine di Pollo",
+    "category": "tv-cinema",
+    "director": "Sofia Rossi",
+    "client": "",
+    "year": "2023",
+    "vimeoId": "cameliapictures/coscinedipollocamelia",
+    "thumbnail": "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Una tenera commedia familiare incentrata sui piccoli drammi culinari quotidiani e sui ricordi d'infanzia legati alla tavola domenicale.",
+    "description_en": "A heartwarming family comedy centered on small daily culinary dramas and childhood memories tied to the Sunday dining table.",
+    "credits": {
+      "Director": "Sofia Rossi",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Andrea Castiglione",
+      "Editor": "Federica Colombo",
+      "Sound Design": "Studio Soundwave"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Lui",
+    "category": "tv-cinema",
+    "director": "Matteo Ricci",
+    "client": "",
+    "year": "2025",
+    "vimeoId": "cameliapictures/luicamelia",
+    "thumbnail": "https://images.unsplash.com/photo-1511295742364-92767fa62d9f?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un dramma psicologico silenzioso che scava nella psiche di uno scrittore solitario e nella sua ricerca di ispirazione tra sogno e realtà.",
+    "description_en": "A quiet psychological drama delving into the psyche of a solitary writer and his search for inspiration between dream and reality.",
+    "credits": {
+      "Director": "Matteo Ricci",
+      "Executive Producer": "Riccardo Meli",
+      "Director of Photography": "Simone Greco",
+      "Editor": "Giulia Neri",
+      "Composer": "Max Richter"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Anche una sola lettera",
+    "category": "tv-cinema",
+    "director": "Elena Bianchi",
+    "client": "",
+    "year": "2022",
+    "vimeoId": "cameliapictures/auslcamelia",
+    "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un film storico epistolare ambientato nell'Italia del dopoguerra, che racconta come una singola lettera possa cambiare il destino di un intero paese.",
+    "description_en": "An epistolary historical drama set in post-war Italy, showing how a single letter can shift the destiny of an entire country.",
+    "credits": {
+      "Director": "Elena Bianchi",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Andrea Castiglione",
+      "Editor": "Matteo Bianchi",
+      "Production Designer": "Chiara Valenti"
+    }
+  },
+  {
+    "id": "5",
+    "title": "Da capo",
+    "category": "tv-cinema",
+    "director": "Matteo Ricci",
+    "client": "Conservatorio di Roma",
+    "year": "2023",
+    "vimeoId": "cameliapictures/dacapocamelia",
+    "thumbnail": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Il viaggio di rinascita artistica di una giovane pianista classica che, in seguito a un infortunio, deve imparare nuovamente a suonare partendo da zero.",
+    "description_en": "The artistic rebirth journey of a young classical pianist who, following an injury, must relearn to play starting from scratch.",
+    "credits": {
+      "Director": "Matteo Ricci",
+      "Executive Producer": "Riccardo Meli",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Federica Colombo",
+      "Music Consultant": "Giacomo Verdi"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Gig, Dieci anni nel paese delle meraviglie",
+    "category": "tv-cinema",
+    "director": "Matteo Ricci",
+    "client": "Gig Giocattoli",
+    "year": "2023",
+    "vimeoId": "cameliapictures/gig",
+    "thumbnail": "https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Una docu-serie nostalgica che esplora l'evoluzione sociale italiana attraverso la storia e la diffusione dei giocattoli negli anni '80 e '90.",
+    "description_en": "A nostalgic docu-series exploring Italian social evolution through the history and popularity of toys in the '80s and '90s.",
+    "credits": {
+      "Director": "Matteo Ricci",
+      "Client": "Gig Toys",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Luca Moretti",
+      "Editor": "Federica Colombo"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Acqualatina",
+    "category": "tv-cinema",
+    "director": "Luca Moretti",
+    "client": "Acqualatina SpA",
+    "year": "2022",
+    "vimeoId": "1156896692",
+    "thumbnail": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Cortometraggio documentaristico che narra il valore dell'acqua e la tutela delle risorse idriche nel territorio del basso Lazio.",
+    "description_en": "A documentary short film illustrating the value of water and the protection of water resources in the lower Lazio region.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "8",
+    "title": "P&G per l'Italia",
+    "category": "tv-cinema",
+    "director": "Elena Bianchi",
+    "client": "Procter & Gamble",
+    "year": "2023",
+    "vimeoId": "1156910173/50dcc01a91",
+    "thumbnail": "https://images.unsplash.com/photo-1526256262170-73a2a3d75e4b?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un documentario istituzionale e narrativo che illustra le attività di solidarietà e riqualificazione urbana promosse dal brand sul territorio italiano.",
+    "description_en": "An institutional narrative documentary illustrating the solidarity and urban regeneration projects promoted by the brand across Italy.",
+    "credits": {
+      "Director": "Elena Bianchi",
+      "Client": "P&G Corporate",
+      "Director of Photography": "Simone Greco",
+      "Editor": "Matteo Bianchi",
+      "Colorist": "Vincenzo Carbone"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Petrarca Pellegrino Giubilare",
+    "category": "tv-cinema",
+    "director": "Giulia Ferrara",
+    "client": "Società Storica",
+    "year": "2021",
+    "vimeoId": "1156911103",
+    "thumbnail": "https://images.unsplash.com/photo-1447069387593-a5de0862481e?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Film storico che ripercorre l'itinerario e i pensieri di Francesco Petrarca nel suo viaggio a Roma in occasione del Giubileo del 1350.",
+    "description_en": "A historical film tracing the route and thoughts of Francesco Petrarch during his journey to Rome on the occasion of the 1350 Jubilee.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Davide Galli",
+      "Editor": "Elena Bianchi"
+    }
+  },
+  {
+    "id": "10",
+    "title": "7305",
+    "category": "tv-cinema",
+    "director": "Luca Moretti",
+    "client": "",
+    "year": "2024",
+    "vimeoId": "1156906237/6500af3c71",
+    "thumbnail": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un'opera cinematografica sperimentale incentrata sul silenzio, sulla solitudine e sui paesaggi naturali incontaminati d'alta quota.",
+    "description_en": "An experimental cinematic work focused on silence, solitude, and pristine natural landscapes at high altitudes.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "11",
+    "title": "Mulino Bianco",
+    "category": "commercials",
+    "director": "Luca Moretti",
+    "client": "Mulino Bianco",
+    "year": "2025",
+    "vimeoId": "1156873241/cc09aba528",
+    "thumbnail": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Uno spot televisivo luminoso ed evocativo che celebra il risveglio delle famiglie italiane con calore, fragranza e autenticità rurale.",
+    "description_en": "A bright and evocative television commercial celebrating the awakening of Italian families with warmth, fresh-baked fragrance, and rural authenticity.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Client": "Barilla Group",
+      "Agency": "Publicis Italy",
+      "Director of Photography": "Elena Belova",
+      "Food Stylist": "Giovanna Boni",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "12",
+    "title": "Cassa Depositi e Prestiti",
+    "category": "commercials",
+    "director": "Giulia Ferrara",
+    "client": "CDP",
+    "year": "2024",
+    "vimeoId": "1156898919/6a749e86e4",
+    "thumbnail": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Campagna istituzionale incentrata sugli investimenti, la crescita delle imprese ed il futuro sostenibile delle infrastrutture del Paese.",
+    "description_en": "An institutional campaign highlighting investments, business growth, and the sustainable future of the country's infrastructure.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Client": "Cassa Depositi e Prestiti SpA",
+      "Director of Photography": "Davide Galli",
+      "Editor": "Elena Bianchi"
+    }
+  },
+  {
+    "id": "13",
+    "title": "Compara Semplice",
+    "category": "commercials",
+    "director": "Luca Moretti",
+    "client": "Compara Semplice",
+    "year": "2024",
+    "vimeoId": "1156901029",
+    "thumbnail": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Spot dinamico basato su un montaggio serrato e infografiche 3D per spiegare con ironia la convenienza della comparazione delle utenze di casa.",
+    "description_en": "A dynamic commercial featuring fast editing and 3D infographics, explaining with irony the benefit of comparing household utilities.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Client": "ComparaSemplice.it",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Matteo Bianchi"
+    }
+  },
+  {
+    "id": "14",
+    "title": "Ford PartPlus",
+    "category": "commercials",
+    "director": "Elena Bianchi",
+    "client": "Ford",
+    "year": "2025",
+    "vimeoId": "1157218785/0e3762789e",
+    "thumbnail": "https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Uno spot ad alto impatto tecnologico incentrato sulla precisione dei componenti originali Ford e sul servizio di assistenza specializzata.",
+    "description_en": "A high-tech commercial focusing on the precision of original Ford components and specialized maintenance service.",
+    "credits": {
+      "Director": "Elena Bianchi",
+      "Client": "Ford Italia SpA",
+      "Director of Photography": "Simone Greco",
+      "Editor": "Matteo Bianchi"
+    }
+  },
+  {
+    "id": "15",
+    "title": "LG - Life's Good",
+    "category": "commercials",
+    "director": "Giulia Ferrara",
+    "client": "LG",
+    "year": "2024",
+    "vimeoId": "1156872704",
+    "thumbnail": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Spot incentrato sulla tecnologia smart degli elettrodomestici di ultima generazione e sulla loro integrazione fluida nella vita di tutti i giorni.",
+    "description_en": "A commercial focused on smart technology of next-generation home appliances and their seamless integration into daily life.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Client": "LG Electronics Italia",
+      "Director of Photography": "Davide Galli",
+      "Editor": "Elena Bianchi"
+    }
+  },
+  {
+    "id": "16",
+    "title": "Scai Solution Group",
+    "category": "commercials",
+    "director": "Matteo Ricci",
+    "client": "Gruppo SCAI",
+    "year": "2025",
+    "vimeoId": "1156923650/8e032ab47a",
+    "thumbnail": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Spot corporate e di comunicazione istituzionale per presentare le soluzioni tecnologiche integrate e le diverse business unit del gruppo informatico.",
+    "description_en": "Corporate commercial presenting the integrated technological solutions and various business units of the IT group.",
+    "credits": {
+      "Director": "Matteo Ricci",
+      "Client": "Gruppo SCAI",
+      "Director of Photography": "Luca Moretti",
+      "Editor": "Federica Colombo"
+    }
+  },
+  {
+    "id": "17",
+    "title": "Forum Sport Center",
+    "category": "commercials",
+    "director": "Sofia Rossi",
+    "client": "Forum",
+    "year": "2023",
+    "vimeoId": "1156904661/5fcb5e3eec",
+    "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Video promozionale incentrato sull'energia dello sport, il benessere personale e la community all'interno dello storico centro sportivo romano.",
+    "description_en": "A promotional video focusing on sports energy, personal wellness, and community inside the historic Roman athletic center.",
+    "credits": {
+      "Director": "Sofia Rossi",
+      "Client": "Forum Sport Center",
+      "Director of Photography": "Andrea Castiglione",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "18",
+    "title": "Vicker - Trova il Professionista",
+    "category": "commercials",
+    "director": "Luca Moretti",
+    "client": "Vicker",
+    "year": "2024",
+    "vimeoId": "1156913485",
+    "thumbnail": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Campagna promozionale fresca e ironica per il lancio dell'applicazione mobile dedicata alla ricerca di professionisti e artigiani locali.",
+    "description_en": "A fresh and humorous promotional campaign for the launch of the mobile app dedicated to finding local professionals and craftsmen.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Client": "Vicker App",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "19",
+    "title": "La cultura è magia",
+    "category": "entertainment",
+    "director": "Sofia Rossi",
+    "client": "Roma Capitale",
+    "year": "2025",
+    "vimeoId": "1156907268/7ffc7838e2",
+    "thumbnail": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Uno speciale televisivo che utilizza effetti visivi integrati e proiezioni architetturali per narrare la storia millenaria dei monumenti romani ai più giovani.",
+    "description_en": "A television special using integrated visual effects and architectural projections to tell the millenary history of Roman monuments to younger audiences.",
+    "credits": {
+      "Director": "Sofia Rossi",
+      "Client": "Assessorato alla Cultura Roma",
+      "Director of Photography": "Andrea Castiglione",
+      "VFX Supervisor": "VFX Lab Rome",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "20",
+    "title": "La scuola è magia",
+    "category": "entertainment",
+    "director": "Sofia Rossi",
+    "client": "Miur",
+    "year": "2024",
+    "vimeoId": "1156908055/f8d5785b66",
+    "thumbnail": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un viaggio visivo che racconta le buone pratiche, i progetti innovativi e le attività quotidiane nelle scuole elementari del territorio italiano.",
+    "description_en": "A visual journey illustrating best practices, innovative projects, and daily activities in Italian elementary schools.",
+    "credits": {
+      "Director": "Sofia Rossi",
+      "Client": "Ministero dell'Istruzione",
+      "Director of Photography": "Andrea Castiglione",
+      "Editor": "Giulia Neri"
+    }
+  },
+  {
+    "id": "21",
+    "title": "Mi racconto e ti sfido",
+    "category": "entertainment",
+    "director": "Giulia Ferrara",
+    "client": "Food Network",
+    "year": "2024",
+    "vimeoId": "1156909500",
+    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un format culinario dinamico e frizzante in cui chef tradizionali italiani si sfidano rivisitando le ricette segrete delle rispettive famiglie.",
+    "description_en": "A dynamic and lively culinary show format where traditional Italian chefs compete by putting a fresh spin on their secret family recipes.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Broadcaster": "Discovery Italia",
+      "Director of Photography": "Davide Galli",
+      "Editor": "Elena Bianchi",
+      "Producer": "Roberto Gatto"
+    }
+  },
+  {
+    "id": "22",
+    "title": "Piatti Freddi",
+    "category": "entertainment",
+    "director": "Giulia Ferrara",
+    "client": "Cucina Italiana",
+    "year": "2024",
+    "vimeoId": "cameliapictures/piattifreddi",
+    "thumbnail": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Una serie web fresca e leggera incentrata sulla cucina estiva veloce, presentata da celebri influencer gastronomici con grafiche pop e ritmo incalzante.",
+    "description_en": "A fresh and lighthearted web series focusing on quick summer dishes, hosted by food influencers with pop graphics and fast-paced editing.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Executive Producer": "Carlo Cozzi",
+      "Director of Photography": "Davide Galli",
+      "Motion Graphics": "Alessandro Riva",
+      "Editor": "Elena Bianchi"
+    }
+  },
+  {
+    "id": "23",
+    "title": "Alan Sorrenti - Oggi",
+    "category": "music-videos",
+    "director": "Elena Bianchi",
+    "client": "Alan Sorrenti",
+    "year": "2022",
+    "vimeoId": "1156896692",
+    "thumbnail": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Videoclip ufficiale del celebre brano 'Oggi' di Alan Sorrenti, caratterizzato da atmosfere vintage, colori caldi e uno stile narrativo retrò-chic.",
+    "description_en": "Official music video for Alan Sorrenti's track 'Oggi', featuring vintage atmospheres, warm colors, and a retro-chic narrative style.",
+    "credits": {
+      "Director": "Elena Bianchi",
+      "Artist": "Alan Sorrenti",
+      "Label": "Sony Music",
+      "Director of Photography": "Simone Greco",
+      "Editor": "Matteo Bianchi"
+    }
+  },
+  {
+    "id": "24",
+    "title": "EA SPORTS FC 2026 - Totti Icon",
+    "category": "branded-content",
+    "director": "Matteo Ricci",
+    "client": "EA Sports",
+    "year": "2026",
+    "vimeoId": "cameliapictures/easports",
+    "thumbnail": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Un promo cinematografico e nostalgico celebrante Francesco Totti come leggenda immortale nel nuovo capitolo di EA SPORTS FC.",
+    "description_en": "A cinematic and nostalgic promotional film celebrating Francesco Totti as an immortal legend in the new chapter of EA SPORTS FC.",
+    "credits": {
+      "Director": "Matteo Ricci",
+      "Client": "Electronic Arts",
+      "Director of Photography": "Luca Moretti",
+      "Editor": "Federica Colombo",
+      "Colorist": "Vincenzo Carbone"
+    }
+  },
+  {
+    "id": "25",
+    "title": "Il Romanista",
+    "category": "branded-content",
+    "director": "Giulia Ferrara",
+    "client": "Il Romanista",
+    "year": "2024",
+    "vimeoId": "1156906369/073fcd90cd",
+    "thumbnail": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Campagna di comunicazione incentrata sulla passione dei tifosi di Roma, catturando le emozioni autentiche all'interno dello stadio Olimpico.",
+    "description_en": "Communication campaign focused on the passion of Roma football fans, capturing authentic emotions inside the Stadio Olimpico.",
+    "credits": {
+      "Director": "Giulia Ferrara",
+      "Client": "Il Romanista",
+      "Director of Photography": "Davide Galli",
+      "Editor": "Elena Bianchi"
+    }
+  },
+  {
+    "id": "26",
+    "title": "California Cook House",
+    "category": "branded-content",
+    "director": "Luca Moretti",
+    "client": "California Cook House",
+    "year": "2025",
+    "vimeoId": "1178516076/69b929e770",
+    "thumbnail": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop",
+    "description_it": "Brevi clip social ritmate e dinamiche incentrate sullo street-food americano, con focus sulla croccantezza e sulla preparazione espressa dei piatti.",
+    "description_en": "Fast-paced, dynamic social clips focusing on American street food, emphasizing texture and fresh preparation of dishes.",
+    "credits": {
+      "Director": "Luca Moretti",
+      "Client": "California Cook House",
+      "Director of Photography": "Elena Belova",
+      "Editor": "Giulia Neri"
+    }
+  }
+]
