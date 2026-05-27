@@ -2911,33 +2911,27 @@ label[for="thumbnail-file"]:hover {
   text-transform: uppercase;
   letter-spacing: -0.05em;
   line-height: 0.9;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skills-giant-letter {
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: 2px var(--accent-yellow);
   filter: drop-shadow(0 0 8px var(--accent-yellow)) drop-shadow(0 0 20px var(--accent-yellow));
+  animation: skillsFlicker var(--flicker-dur, 0.4s) linear infinite,
+             skillsFill 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation-delay: var(--flicker-delay, 0s), 1.8s;
 }
 
-/* Loop-Drift flickering for giant skills matching Hero logo style */
-.skills-giant-item:nth-child(1) .skills-giant-text {
-  animation: skillsFlicker 0.37s linear infinite,
-             skillsFill 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0s, 1.8s;
+.skills-giant-space {
+  display: inline-block;
+  width: 2.5vw;
 }
-.skills-giant-item:nth-child(2) .skills-giant-text {
-  animation: skillsFlicker 0.47s linear infinite,
-             skillsFill 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.05s, 1.8s;
-}
-.skills-giant-item:nth-child(3) .skills-giant-text {
-  animation: skillsFlicker 0.41s linear infinite,
-             skillsFill 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.1s, 1.8s;
-}
-.skills-giant-item:nth-child(4) .skills-giant-text {
-  animation: skillsFlicker 0.53s linear infinite,
-             skillsFill 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.08s, 1.8s;
-}
+
 
 @keyframes skillsFlicker {
   0%, 100% {
@@ -3021,6 +3015,14 @@ label[for="thumbnail-file"]:hover {
     font-size: 11vw; /* Responsive scale to prevent viewport overflow */
     letter-spacing: -0.04em;
     line-height: 1.0;
+  }
+  
+  .skills-giant-letter {
+    -webkit-text-stroke: 1.2px var(--accent-yellow);
+  }
+  
+  .skills-giant-space {
+    width: 3.5vw;
   }
   
   .skills-giant-item {
