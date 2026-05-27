@@ -116,8 +116,6 @@ export default function WorkGrid({ language, activeFilter, setActiveFilter, onPr
     <section id="work" className="work-section">
       <div className="container">
         <div className="work-header">
-          <h2 className="section-title">{t.workTitle}</h2>
-          
           <nav className="filters-wrapper">
             {categories.map(cat => (
               <button
