@@ -2918,8 +2918,9 @@ label[for="thumbnail-file"]:hover {
 /* Layout B: Rotator Horizontal Marquee container */
 .skills-rotator-horizontal {
   position: absolute;
-  top: 0; /* Aligned with the position of the first word */
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   width: 100vw;
   margin-left: calc(-50vw + 50%); /* Break out of container to span full width */
   opacity: 0;
@@ -3113,12 +3114,12 @@ label[for="thumbnail-file"]:hover {
 @keyframes skillsFadeIn {
   from {
     opacity: 0;
-    transform: scale(1.05);
+    transform: translateY(-50%) scale(1.05);
     filter: blur(8px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(-50%) scale(1);
     filter: blur(0);
     pointer-events: auto;
   }
