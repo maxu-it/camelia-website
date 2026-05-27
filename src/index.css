@@ -2135,13 +2135,13 @@ label[for="thumbnail-file"]:hover {
 }
 
 .about-narrative-text {
-  font-family: 'Druk Condensed Super', 'Druk Condensed', 'Bebas Neue', 'Anton', var(--font-display), sans-serif;
-  font-size: 2.8rem;
-  font-weight: 900;
-  line-height: 1.1;
+  font-family: 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.75;
   color: var(--text-primary);
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-transform: none;
 }
 
 .highlight-pink {
@@ -2390,8 +2390,8 @@ label[for="thumbnail-file"]:hover {
 
 @media (max-width: 768px) {
   .about-narrative-text {
-    font-size: 1.85rem;
-    line-height: 1.1;
+    font-size: 1.35rem;
+    line-height: 1.6;
   }
   .fullscreen-menu-link {
     font-size: 2.5rem;
