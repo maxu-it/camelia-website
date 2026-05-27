@@ -43,26 +43,57 @@ export default function Services({ language, onClose }) {
 
       <div className="container skills-container-giant">
         <div className="skills-giant-list">
-          <div className="skills-giant-item">
-            <span className="skills-giant-text">
-              {renderFlickeringText(t.skill1Title, 0)}
-            </span>
+          
+          {/* Layout A: Initial Vertical List (Flickers, turns white, then fades out at 3s) */}
+          <div className="skills-intro-vertical">
+            <div className="skills-giant-item">
+              <span className="skills-giant-text">
+                {renderFlickeringText(t.skill1Title, 0)}
+              </span>
+            </div>
+            <div className="skills-giant-item">
+              <span className="skills-giant-text">
+                {renderFlickeringText(t.skill2Title, 1)}
+              </span>
+            </div>
+            <div className="skills-giant-item">
+              <span className="skills-giant-text">
+                {renderFlickeringText(t.skill3Title, 2)}
+              </span>
+            </div>
+            <div className="skills-giant-item">
+              <span className="skills-giant-text">
+                {renderFlickeringText(t.skill4Title, 3)}
+              </span>
+            </div>
           </div>
-          <div className="skills-giant-item">
-            <span className="skills-giant-text">
-              {renderFlickeringText(t.skill2Title, 1)}
-            </span>
+
+          {/* Layout B: Horizontal Scrolling Marquee (Fades in at 3s, positioned at the first word height) */}
+          <div className="skills-rotator-horizontal">
+            <div className="skills-marquee-track">
+              <div className="skills-marquee-content">
+                <span className="skills-marquee-word">{t.skill1Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill2Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill3Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill4Title}</span>
+                <span className="skills-marquee-dot">·</span>
+              </div>
+              <div className="skills-marquee-content" aria-hidden="true">
+                <span className="skills-marquee-word">{t.skill1Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill2Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill3Title}</span>
+                <span className="skills-marquee-dot">·</span>
+                <span className="skills-marquee-word">{t.skill4Title}</span>
+                <span className="skills-marquee-dot">·</span>
+              </div>
+            </div>
           </div>
-          <div className="skills-giant-item">
-            <span className="skills-giant-text">
-              {renderFlickeringText(t.skill3Title, 2)}
-            </span>
-          </div>
-          <div className="skills-giant-item">
-            <span className="skills-giant-text">
-              {renderFlickeringText(t.skill4Title, 3)}
-            </span>
-          </div>
+
         </div>
       </div>
     </section>
