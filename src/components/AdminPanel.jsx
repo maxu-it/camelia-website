@@ -146,8 +146,8 @@ export default function AdminPanel({ projects, onUpdate, team = [], onUpdateTeam
           // Standard admin login (hybrid approach)
           // 1. Authenticate standard_admin under the hood to get RLS access
           const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
-            email: 'standard_admin@cameliapictures.com',
-            password: 'CameliaStandardAdmin2026!'
+            email: import.meta.env.VITE_STANDARD_ADMIN_EMAIL || '',
+            password: import.meta.env.VITE_STANDARD_ADMIN_PASSWORD || ''
           });
           
           if (authError) {
@@ -187,13 +187,18 @@ export default function AdminPanel({ projects, onUpdate, team = [], onUpdateTeam
       }
     } else {
       // Offline mode
-      if (lowerUsername === 'maxu@libero.it' && password === 'Superuser2026') {
+      const offlineSuperuserEmail = (import.meta.env.VITE_OFFLINE_SUPERUSER_EMAIL || 'maxu@libero.it').toLowerCase();
+      const offlineSuperuserPassword = import.meta.env.VITE_OFFLINE_SUPERUSER_PASSWORD || 'Superuser2026';
+      const offlineAdminUsername = (import.meta.env.VITE_OFFLINE_ADMIN_USERNAME || 'cameliadm').toLowerCase();
+      const offlineAdminPassword = import.meta.env.VITE_OFFLINE_ADMIN_PASSWORD || 'ToTheUniverse';
+
+      if (lowerUsername === offlineSuperuserEmail && password === offlineSuperuserPassword) {
         setIsLoggedIn(true);
         setUserEmail('maxu@libero.it');
         sessionStorage.setItem('camelia_admin_auth', 'true');
         sessionStorage.setItem('camelia_admin_user', 'maxu@libero.it');
         setLoginError('');
-      } else if (lowerUsername === 'cameliadm' && password === 'ToTheUniverse') {
+      } else if (lowerUsername === offlineAdminUsername && password === offlineAdminPassword) {
         setIsLoggedIn(true);
         setUserEmail('cameliadm');
         sessionStorage.setItem('camelia_admin_auth', 'true');
@@ -734,7 +739,13 @@ export default function AdminPanel({ projects, onUpdate, team = [], onUpdateTeam
         setAdminUsers(JSON.parse(stored));
       } else {
         const defaultMock = [
-          { id: '1', username: 'cameliadm', password: 'ToTheUniverse', is_active: true, created_at: new Date().toISOString() }
+          { 
+            id: '1', 
+            username: import.meta.env.VITE_OFFLINE_ADMIN_USERNAME || 'cameliadm', 
+            password: import.meta.env.VITE_OFFLINE_ADMIN_PASSWORD || 'ToTheUniverse', 
+            is_active: true, 
+            created_at: new Date().toISOString() 
+          }
         ];
         localStorage.setItem('camelia_mock_admin_users', JSON.stringify(defaultMock));
         setAdminUsers(defaultMock);
