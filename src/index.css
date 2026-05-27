@@ -388,11 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes scaleDownLogo {
-  0%, 80% {
+  0%, 100% {
     transform: scale(2.2);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -2876,11 +2873,8 @@ label[for="thumbnail-file"]:hover {
 
 /* Mobile-specific scale down animation for CAMELIA logo to prevent overflow */
 @keyframes scaleDownLogoMobile {
-  0%, 80% {
+  0%, 100% {
     transform: scale(0.92);
-  }
-  100% {
-    transform: scale(0.78);
   }
 }
 

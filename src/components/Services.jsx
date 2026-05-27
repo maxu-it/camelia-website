@@ -12,11 +12,8 @@ export default function Services({ language, onClose }) {
       </button>
 
       <div className="container skills-container">
-        <div className="services-header" style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-          <h2 className="section-title text-uppercase skills-header-title">
-            {t.servicesTitle}
-          </h2>
-        </div>
+        {/* Spacing for layout alignment */}
+        <div style={{ height: '4rem' }}></div>
 
         <div className="skills-grid">
           {/* Skill 1: PRODUCTION */}

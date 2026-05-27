@@ -58,13 +58,8 @@ export default function AboutSection({ language, onClose, team = [] }) {
 
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         
-        {/* Section Header */}
-        <div className="about-header-redesign" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h2 className="section-title text-uppercase" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-            {t.aboutSectionTitle}
-          </h2>
-          <div className="about-accent-line" style={{ margin: '0 auto' }}></div>
-        </div>
+        {/* Spacing for layout alignment */}
+        <div style={{ height: '4rem' }}></div>
 
         {/* Unified Continuous Narrative Prose */}
         <div className="about-narrative-container">
