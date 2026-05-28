@@ -2844,7 +2844,7 @@ label[for="thumbnail-file"]:hover {
   color: #888078;
   z-index: 10;
   cursor: pointer;
-  animation: btnFadeReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 5.4s both;
+  animation: scrollFadeReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 5.4s both;
 }
 
 .scroll-arrow {
@@ -2871,6 +2871,17 @@ label[for="thumbnail-file"]:hover {
   100% {
     transform: translateY(8px);
     opacity: 0;
+  }
+}
+
+@keyframes scrollFadeReveal {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 
