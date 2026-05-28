@@ -49,7 +49,13 @@ export default function Hero({ language, onDiscoverClick }) {
         </button>
       </div>
 
-      <div className="hero-scroll-down">
+      <div 
+        className="hero-scroll-down"
+        onClick={() => {
+          const el = document.getElementById('work');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
         <span>{t.heroScrollText || "SCROLL"}</span>
         <span className="scroll-arrow">↓</span>
       </div>

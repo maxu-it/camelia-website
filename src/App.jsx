@@ -37,18 +37,23 @@ export default function App() {
   const [activeFilter, setActiveFilter] = useState('commercial');
   const [language, setLanguage] = useState('it');
   const [activeOverlay, setActiveOverlay] = useState(null); // null, 'about', 'services'
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Disable scroll when overlay is active
+  // Disable scroll when overlay, project modal, or hamburger menu is active
   useEffect(() => {
-    if (activeOverlay) {
-      document.body.style.overflow = 'hidden';
+    const shouldLock = activeOverlay || selectedProject || isMenuOpen;
+    if (shouldLock) {
+      document.documentElement.classList.add('scroll-locked');
+      document.body.classList.add('scroll-locked');
     } else {
-      document.body.style.overflow = 'unset';
+      document.documentElement.classList.remove('scroll-locked');
+      document.body.classList.remove('scroll-locked');
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.documentElement.classList.remove('scroll-locked');
+      document.body.classList.remove('scroll-locked');
     };
-  }, [activeOverlay]);
+  }, [activeOverlay, selectedProject, isMenuOpen]);
   
   // Custom router, global projects, and team states
   const [isAdminRoute, setIsAdminRoute] = useState(false);
@@ -181,6 +186,7 @@ export default function App() {
         setLanguage={setLanguage} 
         onOpenAbout={() => setActiveOverlay('about')}
         onOpenServices={() => setActiveOverlay('services')}
+        onMenuStateChange={setIsMenuOpen}
       />
       
       {/* Cinematic Hero Section */}

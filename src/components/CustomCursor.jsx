@@ -4,6 +4,7 @@ export default function CustomCursor() {
   const [isHovered, setIsHovered] = useState(false);
   const [cursorLabel, setCursorLabel] = useState('');
   const [isVisible, setIsVisible] = useState(false);
+  const [isTouch, setIsTouch] = useState(true);
 
   const dotRef = useRef(null);
   const ringRef = useRef(null);
@@ -12,6 +13,29 @@ export default function CustomCursor() {
   const mouse = useRef({ x: 0, y: 0 });
   const ringPos = useRef({ x: 0, y: 0 });
   const dotPos = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const hoverMedia = window.matchMedia('(hover: hover) and (pointer: fine)');
+    setIsTouch(!hoverMedia.matches);
+
+    const listener = (e) => {
+      setIsTouch(!e.matches);
+    };
+
+    if (hoverMedia.addEventListener) {
+      hoverMedia.addEventListener('change', listener);
+    } else if (hoverMedia.addListener) {
+      hoverMedia.addListener(listener);
+    }
+
+    return () => {
+      if (hoverMedia.removeEventListener) {
+        hoverMedia.removeEventListener('change', listener);
+      } else if (hoverMedia.removeListener) {
+        hoverMedia.removeListener(listener);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     // Show cursor on first mouse move
@@ -85,7 +109,7 @@ export default function CustomCursor() {
     };
   }, [isVisible]);
 
-  if (!isVisible) return null;
+  if (isTouch || !isVisible) return null;
 
   return (
     <>

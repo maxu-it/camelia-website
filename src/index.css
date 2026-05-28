@@ -42,6 +42,12 @@ html, body {
   max-width: 100%;
 }
 
+html.scroll-locked,
+body.scroll-locked {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -131,6 +137,18 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .header-controls {
+    gap: 1.25rem;
+  }
 }
 
 .logo {
@@ -1451,11 +1469,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .lang-selector {
-    display: none;
-  }
-  
-  .lang-toggle-mobile {
-    display: flex !important;
+    display: flex;
   }
 }
 
@@ -2174,6 +2188,7 @@ label[for="thumbnail-file"]:hover {
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 6rem 2rem 4rem 2rem;
+  overflow-y: auto;
 }
 
 .fullscreen-menu-overlay.active {

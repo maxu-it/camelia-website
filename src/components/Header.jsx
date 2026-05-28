@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { translations } from '../translations';
 
-export default function Header({ language, setLanguage, onOpenAbout, onOpenServices }) {
+export default function Header({ language, setLanguage, onOpenAbout, onOpenServices, onMenuStateChange }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredLink, setHoveredLink] = useState(null); // 'work', 'about', 'services', 'contact'
@@ -20,6 +20,12 @@ export default function Header({ language, setLanguage, onOpenAbout, onOpenServi
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (onMenuStateChange) {
+      onMenuStateChange(isMenuOpen);
+    }
+  }, [isMenuOpen, onMenuStateChange]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -59,7 +65,7 @@ export default function Header({ language, setLanguage, onOpenAbout, onOpenServi
           </a>
 
           {/* Controls (Right) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
+          <div className="header-controls">
             
             {/* Language Selector Desktop */}
             <div className="lang-selector">
