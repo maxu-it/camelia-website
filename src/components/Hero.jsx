@@ -19,7 +19,7 @@ export default function Hero({ language, onDiscoverClick }) {
       
       <div className="hero-content">
         <div className="hero-logo-wrapper">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" className="hero-logo-svg-animated">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 430 1080 200" className="hero-logo-svg-animated">
             {/* C */}
             <path className="logo-path path-c" d="M55.81,492.8c-8,12.97-12.41,29.73-12.41,47.2s4.41,34.24,12.41,47.2c10,16.21,25.06,25.5,41.32,25.5h91.38v-46.25h-90.47c-2.77-2.02-8.39-11.43-8.39-26.46s5.62-24.44,8.39-26.46h90.47v-46.25h-91.38c-16.25,0-31.31,9.3-41.32,25.5Z"/>
             {/* A */}
@@ -56,7 +56,6 @@ export default function Hero({ language, onDiscoverClick }) {
           if (el) el.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <span>{t.heroScrollText || "SCROLL"}</span>
         <span className="scroll-arrow">↓</span>
       </div>
     </section>

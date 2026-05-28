@@ -278,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   height: 100vh;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -697,6 +698,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero-content {
     padding: 0 24px;
+    transform: translateY(-30px);
   }
   .hero-disciplines-grid {
     grid-template-columns: 1fr;
@@ -718,6 +720,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 24px;
     right: 24px;
     text-align: center;
+  }
+  .hero-scroll-down {
+    bottom: 24px;
   }
   .hero .hero-logo-svg-animated {
     animation: scaleDownLogoMobile 5.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
