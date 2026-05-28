@@ -2946,7 +2946,7 @@ label[for="thumbnail-file"]:hover {
 .skills-marquee-word {
   font-family: 'Outfit', Impact, sans-serif;
   font-weight: 900;
-  font-size: 8.2vw;
+  font-size: 24.6vw;
   text-transform: uppercase;
   letter-spacing: -0.05em;
   color: #ffffff;
@@ -2956,7 +2956,7 @@ label[for="thumbnail-file"]:hover {
 .skills-marquee-dot {
   font-family: 'Outfit', Impact, sans-serif;
   font-weight: 900;
-  font-size: 8.2vw;
+  font-size: 24.6vw;
   color: var(--accent-yellow);
   margin: 0 3vw;
   display: inline-block;
@@ -2965,7 +2965,7 @@ label[for="thumbnail-file"]:hover {
 .skills-giant-text {
   font-family: 'Outfit', Impact, sans-serif;
   font-weight: 900;
-  font-size: 8.2vw;
+  font-size: 9vw;
   text-transform: uppercase;
   letter-spacing: -0.05em;
   line-height: 0.9;
@@ -3070,9 +3070,14 @@ label[for="thumbnail-file"]:hover {
   }
   
   .skills-giant-text {
-    font-size: 11vw; /* Responsive scale to prevent viewport overflow */
+    font-size: 12vw; /* Responsive scale to prevent viewport overflow */
     letter-spacing: -0.04em;
     line-height: 1.0;
+  }
+  
+  .skills-marquee-word,
+  .skills-marquee-dot {
+    font-size: 33vw;
   }
   
   .skills-giant-letter {
