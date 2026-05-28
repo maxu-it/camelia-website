@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import Services from './components/Services';
+import ContactSection from './components/ContactSection';
 import WorkGrid from './components/WorkGrid';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
@@ -186,6 +187,7 @@ export default function App() {
         setLanguage={setLanguage} 
         onOpenAbout={() => setActiveOverlay('about')}
         onOpenServices={() => setActiveOverlay('services')}
+        onOpenContact={() => setActiveOverlay('contact')}
         onMenuStateChange={setIsMenuOpen}
       />
       
@@ -218,6 +220,14 @@ export default function App() {
       {/* Servizi Overlay Panel */}
       {activeOverlay === 'services' && (
         <Services 
+          language={language} 
+          onClose={() => setActiveOverlay(null)} 
+        />
+      )}
+      
+      {/* Contatti Overlay Panel */}
+      {activeOverlay === 'contact' && (
+        <ContactSection 
           language={language} 
           onClose={() => setActiveOverlay(null)} 
         />

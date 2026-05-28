@@ -2296,15 +2296,15 @@ label[for="thumbnail-file"]:hover {
   background-color: #050506;
   border-top: 2px solid var(--accent-pink);
   padding: 5rem 0 4rem 0;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
 
 .bugiardino-container {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1.2fr 1fr 0.8fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 2.5rem;
@@ -2339,11 +2339,11 @@ label[for="thumbnail-file"]:hover {
 }
 
 .bugiardino-title {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--accent-yellow);
   margin-bottom: 1rem;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
@@ -2395,14 +2395,7 @@ label[for="thumbnail-file"]:hover {
   padding-left: 4px;
 }
 
-@media (max-width: 992px) {
-  .bugiardino-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .bugiardino-container {
     grid-template-columns: 1fr;
     gap: 2rem;
