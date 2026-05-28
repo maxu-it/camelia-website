@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800;900&family=Bebas+Neue&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800;900&family=Bebas+Neue&family=Anton&display=swap');
 
 :root {
   --bg-color: #070708;
@@ -978,6 +978,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Team Grid */
 .team-section-title {
+  font-family: 'Bricolage Grotesque', 'Outfit', sans-serif;
   font-size: 2rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid var(--accent-muted);
@@ -1003,7 +1004,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-name {
-  font-family: var(--font-display);
+  font-family: 'Bricolage Grotesque', 'Outfit', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -2135,7 +2136,7 @@ label[for="thumbnail-file"]:hover {
 }
 
 .about-narrative-text {
-  font-family: 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;
+  font-family: 'Bricolage Grotesque', 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.75;
