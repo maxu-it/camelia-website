@@ -7,40 +7,41 @@ export default function Footer({ language }) {
     <footer className="bugiardino-footer" id="contact-footer">
       <div className="container bugiardino-container">
         
-        {/* Column 1: Brand & Copyright */}
-        <div className="bugiardino-col">
-          <div className="bugiardino-title">CAMELIA PICTURES</div>
+        {/* Row 1: Brand Title */}
+        <div className="footer-brand-title">
+          CAMELIA PICTURES
+        </div>
+        
+        {/* Row 2: Navigation & Social Links */}
+        <div className="footer-links-row">
+          <a href="#privacy" className="footer-link" onClick={(e) => e.preventDefault()}>
+            Privacy Policy
+          </a>
+          <span className="footer-bullet">•</span>
+          <a href="#cookie" className="footer-link" onClick={(e) => e.preventDefault()}>
+            Cookie Policy
+          </a>
+          <span className="footer-bullet">•</span>
+          <a href="https://vimeo.com/cameliapictures" target="_blank" rel="noopener noreferrer" className="footer-link">
+            Vimeo
+          </a>
+          <span className="footer-bullet">•</span>
+          <a href="https://www.instagram.com/camelia.pictures" target="_blank" rel="noopener noreferrer" className="footer-link">
+            Instagram
+          </a>
+          <span className="footer-bullet">•</span>
+          <a href="https://www.linkedin.com/company/cameliapictures" target="_blank" rel="noopener noreferrer" className="footer-link">
+            LinkedIn
+          </a>
+        </div>
+
+        {/* Row 3: Copyright & VAT */}
+        <div className="footer-legal-row">
           <p>© {currentYear} CAMELIA. All rights reserved.</p>
-          <p style={{ marginTop: '0.4rem', fontSize: '0.75rem', opacity: 0.8, lineHeight: '1.5' }}>
-            P.IVA 18334201003<br />
-            Iscr. REA RM-1778755
-          </p>
-          <p className="bugiardino-subtext">Designed & Developed by CAMELIA</p>
-        </div>
-
-        {/* Column 2: Legal & Policy */}
-        <div className="bugiardino-col">
-          <div className="bugiardino-title">POLICY</div>
-          <p>
-            <a href="#privacy" className="bugiardino-email" onClick={(e) => e.preventDefault()}>
-              Privacy Policy
-            </a>
-          </p>
-          <p style={{ marginTop: '0.6rem' }}>
-            <a href="#cookie" className="bugiardino-email" onClick={(e) => e.preventDefault()}>
-              Cookie Policy
-            </a>
-          </p>
-        </div>
-
-        {/* Column 3: Socials */}
-        <div className="bugiardino-col">
-          <div className="bugiardino-title">FOLLOW</div>
-          <div className="bugiardino-socials">
-            <a href="https://vimeo.com/cameliapictures" target="_blank" rel="noopener noreferrer">Vimeo</a>
-            <a href="https://www.instagram.com/camelia.pictures" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.linkedin.com/company/cameliapictures" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
+          <span className="footer-divider-pipe">|</span>
+          <p>P.IVA 18334201003 — Iscr. REA RM-1778755</p>
+          <span className="footer-divider-pipe">|</span>
+          <p className="footer-author">Designed & Developed by CAMELIA</p>
         </div>
 
       </div>
