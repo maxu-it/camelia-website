@@ -41,16 +41,22 @@ export default function Header({ language, setLanguage, onOpenAbout, onOpenServi
 
   const handleLinkClick = (action) => {
     closeMenu();
-    if (action === 'work') {
-      const el = document.getElementById('work');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    } else if (action === 'about') {
+    if (action === 'about') {
       onOpenAbout();
     } else if (action === 'services') {
       onOpenServices();
-    } else if (action === 'contact') {
-      const el = document.getElementById('contact-footer');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Defer scroll target lookup to allow React state change to commit
+      // and .scroll-locked class to be removed from html/body first.
+      setTimeout(() => {
+        if (action === 'work') {
+          const el = document.getElementById('work');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        } else if (action === 'contact') {
+          const el = document.getElementById('contact-footer');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   };
 

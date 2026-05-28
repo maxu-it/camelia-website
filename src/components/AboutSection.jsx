@@ -114,7 +114,8 @@ export default function AboutSection({ language, onClose, team = [] }) {
               fontSize: '0.9rem', 
               padding: '12px 36px', 
               fontFamily: "'Bricolage Grotesque', sans-serif",
-              letterSpacing: '0.05em' 
+              letterSpacing: '0.05em',
+              animation: 'none'
             }}
             aria-label="Close"
           >
