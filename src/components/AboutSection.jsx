@@ -109,20 +109,10 @@ export default function AboutSection({ language, onClose, team = [] }) {
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '6rem', marginBottom: '6rem' }}>
           <button 
             onClick={onClose} 
-            className="wow-hero-btn"
-            style={{ 
-              fontSize: '0.9rem', 
-              padding: '12px 36px', 
-              fontFamily: "'Bricolage Grotesque', sans-serif",
-              letterSpacing: '0.05em',
-              animation: 'none'
-            }}
+            className="bottom-close-x"
             aria-label="Close"
           >
-            <span className="btn-text-wrapper">
-              <span className="btn-text">{language === 'it' ? 'CHIUDI SEZIONE' : 'CLOSE SECTION'}</span>
-              <span className="btn-text-clone">{language === 'it' ? 'CHIUDI SEZIONE' : 'CLOSE SECTION'}</span>
-            </span>
+            ✕
           </button>
         </div>
 
