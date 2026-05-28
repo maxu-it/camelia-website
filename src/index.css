@@ -2935,6 +2935,13 @@ label[for="thumbnail-file"]:hover {
   }
 }
 
+/* Tablet-specific scale down animation for CAMELIA logo to prevent overflow */
+@keyframes scaleDownLogoTablet {
+  0%, 100% {
+    transform: scale(1.5);
+  }
+}
+
 /* Giant Skills Modal Styling */
 .skills-container-giant {
   margin: 0 auto;
@@ -3192,6 +3199,13 @@ label[for="thumbnail-file"]:hover {
   }
   100% {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Tablet viewport logo scaling */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .hero .hero-logo-svg-animated {
+    animation: scaleDownLogoTablet 5.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 }
 
