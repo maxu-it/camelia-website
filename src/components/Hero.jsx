@@ -36,17 +36,6 @@ export default function Hero({ language, onDiscoverClick }) {
             <path className="logo-path path-a2" d="M1011.09,479.85c-12.97-8-29.73-12.41-47.2-12.41s-34.24,4.41-47.2,12.41c-16.21,10-25.5,25.06-25.5,41.32v91.38h46.25v-90.47c2.02-2.77,11.43-8.39,26.46-8.39s24.44,5.62,26.46,8.39v18.03c-.77-.08-1.56-.12-2.36-.12h-.86c-12.86,0-23.26,10.5-23.12,23.36h0c.13,12.68,10.44,22.89,23.12,22.89h.86c.8,0,1.58-.04,2.36-.12v26.42h46.25v-91.38c0-16.25-9.3-31.31-25.5-41.32Z"/>
           </svg>
         </div>
-        
-        <button 
-          onClick={onDiscoverClick} 
-          className="wow-hero-btn"
-          aria-label={t.heroBtnDiscover}
-        >
-          <span className="btn-text-wrapper">
-            <span className="btn-text">{t.heroBtnDiscover}</span>
-            <span className="btn-text-clone">{t.heroBtnDiscover}</span>
-          </span>
-        </button>
       </div>
 
       <div 
