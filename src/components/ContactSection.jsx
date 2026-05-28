@@ -5,7 +5,7 @@ export default function ContactSection({ language, onClose }) {
   const t = translations[language];
 
   return (
-    <section className="overlay-view contact-overlay" style={{ borderTop: '4px solid var(--accent-yellow)' }}>
+    <section className="overlay-view contact-overlay" style={{ borderTop: '4px solid var(--accent-pink)' }}>
       {/* Fullscreen Overlay Close Button */}
       <button className="overlay-close-btn" onClick={onClose} aria-label="Close">
         ✕
@@ -60,7 +60,7 @@ export default function ContactSection({ language, onClose }) {
             </div>
 
             <div className="contact-item" style={{ marginTop: '3rem' }}>
-              <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", color: 'var(--accent-yellow)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+              <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", color: 'var(--accent-pink)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
                 {t.contactFollow}
               </h4>
               <div className="social-links" style={{ display: 'flex', gap: '1.5rem', marginTop: '1rem' }}>
