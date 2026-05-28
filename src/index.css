@@ -3210,7 +3210,6 @@ label[for="thumbnail-file"]:hover {
     transform: translate3d(-50%, 0, 0);
   }
 }
-
 /* Tablet viewport logo scaling */
 @media (min-width: 769px) and (max-width: 1100px) {
   .hero .hero-logo-svg-animated {
@@ -3218,3 +3217,10 @@ label[for="thumbnail-file"]:hover {
   }
 }
 
+/* Enable normal cursor in Admin Panel (Login and Dashboard) */
+.admin-login-container,
+.admin-login-container *,
+.admin-dashboard,
+.admin-dashboard * {
+  cursor: auto !important;
+}
