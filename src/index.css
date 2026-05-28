@@ -2262,22 +2262,12 @@ label[for="thumbnail-file"]:hover {
   line-height: 1.1;
   position: relative;
 }
-
 .fullscreen-menu-link:hover {
   transform: scale(1.03);
   -webkit-text-stroke: 1.5px transparent;
-}
-
-.fullscreen-menu-link:nth-child(odd):hover {
   color: var(--accent-pink);
   text-shadow: 0 0 40px rgba(246, 16, 103, 0.3);
 }
-
-.fullscreen-menu-link:nth-child(even):hover {
-  color: var(--accent-yellow);
-  text-shadow: 0 0 40px rgba(250, 255, 0, 0.3);
-}
-
 .fullscreen-menu-close-btn {
   display: flex;
   align-items: center;
