@@ -143,7 +143,6 @@ export default function ContactSection({ language, onClose }) {
               <div className="primary-offices-grid">
                 <div className="office-card primary-office">
                   <div className="office-card-header">
-                    <span className="pin-icon">📍</span>
                     <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>{t.locationRome}</h4>
                   </div>
                   <p style={{ fontFamily: "var(--font-body)" }}>Via Giuseppe Vaccari 39 — Roma</p>
@@ -151,7 +150,6 @@ export default function ContactSection({ language, onClose }) {
 
                 <div className="office-card primary-office">
                   <div className="office-card-header">
-                    <span className="pin-icon">📍</span>
                     <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>{t.locationMilan}</h4>
                   </div>
                   <p style={{ fontFamily: "var(--font-body)" }}>Via Giacomo Pinaroli 3 — Milano</p>
@@ -177,17 +175,17 @@ export default function ContactSection({ language, onClose }) {
               </h3>
               <div className="auxiliary-offices-grid">
                 <div className="office-card aux-office">
-                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>🏢 {t.locationHeadOffice}</h4>
+                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>{t.locationHeadOffice}</h4>
                   <p style={{ fontFamily: "var(--font-body)" }}>Via Antonio Bertoloni 27<br />00197 Roma (RM)</p>
                 </div>
 
                 <div className="office-card aux-office">
-                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>🎬 {t.locationPostProd}</h4>
+                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>{t.locationPostProd}</h4>
                   <p style={{ fontFamily: "var(--font-body)" }}>Piazzale Clodio, 10<br />00195 Roma (RM)</p>
                 </div>
 
                 <div className="office-card aux-office">
-                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>🎥 {t.locationRental}</h4>
+                  <h4 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontSize: '0.85rem' }}>{t.locationRental}</h4>
                   <p style={{ fontFamily: "var(--font-body)" }}>Via Di Sant’Alessandro, 287<br />00131 Roma (RM)</p>
                 </div>
               </div>

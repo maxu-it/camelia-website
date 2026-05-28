@@ -64,8 +64,8 @@ export const translations = {
     // Contact
     contactTitle: "Contatti",
     locationHeadOffice: "Sede Legale",
-    locationPostProd: "Sale Montaggio & Post-Produzione",
-    locationRental: "Cine Rental (Noleggio)",
+    locationPostProd: "Sale montaggio",
+    locationRental: "Cine rental",
     locationRome: "Sede di Roma",
     locationMilan: "Sede Milano",
     contactInquiries: "Informazioni & Inquiries",
@@ -175,8 +175,8 @@ export const translations = {
     // Contact
     contactTitle: "Contact",
     locationHeadOffice: "Registered Office",
-    locationPostProd: "Editing Suites & Post-Production",
-    locationRental: "Cine Rental (Equipment)",
+    locationPostProd: "Editing Suites",
+    locationRental: "Cine rental",
     locationRome: "Rome Office",
     locationMilan: "Milan Office",
     contactInquiries: "Inquiries & Info",
