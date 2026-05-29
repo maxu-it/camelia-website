@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
@@ -39,6 +39,7 @@ export default function App() {
   const [language, setLanguage] = useState('it');
   const [activeOverlay, setActiveOverlay] = useState(null); // null, 'about', 'services'
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const lastOpenedProjectIdRef = useRef(null);
 
   // Disable scroll when overlay, project modal, or hamburger menu is active
   useEffect(() => {
@@ -55,6 +56,19 @@ export default function App() {
       document.body.classList.remove('scroll-locked');
     };
   }, [activeOverlay, selectedProject, isMenuOpen]);
+
+  // Return focus to the project card that opened the modal once the modal is closed
+  useEffect(() => {
+    if (!selectedProject && lastOpenedProjectIdRef.current) {
+      const cardEl = document.getElementById(`project-card-${lastOpenedProjectIdRef.current}`);
+      if (cardEl) {
+        setTimeout(() => {
+          cardEl.focus({ preventScroll: true });
+          cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    }
+  }, [selectedProject]);
   
   // Custom router, global projects, and team states
   const [isAdminRoute, setIsAdminRoute] = useState(false);
@@ -200,7 +214,12 @@ export default function App() {
           language={language}
           activeFilter={activeFilter}
           setActiveFilter={setActiveFilter}
-          onProjectSelect={setSelectedProject}
+          onProjectSelect={(project) => {
+            setSelectedProject(project);
+            if (project) {
+              lastOpenedProjectIdRef.current = project.id;
+            }
+          }}
           projects={projects}
         />
       </main>

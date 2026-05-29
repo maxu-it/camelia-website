@@ -2765,14 +2765,17 @@ label[for="thumbnail-file"]:hover {
   pointer-events: none;
 }
 
-.grid-item:hover::before {
+.grid-item:hover::before,
+.grid-item:focus-visible::before {
   border-color: var(--accent-pink);
 }
 
-.grid-item:hover {
+.grid-item:hover,
+.grid-item:focus-visible {
   transform: translateY(-4px);
   border-color: transparent;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  outline: none;
 }
 
 .grid-item::after {

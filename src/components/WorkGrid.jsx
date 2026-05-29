@@ -49,10 +49,18 @@ function WorkItem({ project, onOpen, index, language }) {
 
   return (
     <div 
+      id={`project-card-${project.id}`}
       className="grid-item"
+      tabIndex={0}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={() => onOpen(project)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onOpen(project);
+        }
+      }}
       aria-label={`Project: ${project.title}`}
     >
       <div className="grid-item-media">
