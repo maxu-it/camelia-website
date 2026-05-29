@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
 import AdminPanel from './components/AdminPanel';
 import CustomCursor from './components/CustomCursor';
+import LegalOverlay from './components/LegalOverlay';
 import defaultProjects from './projects.json';
 import { supabase, isSupabaseConfigured } from './supabaseClient';
 
@@ -38,12 +39,13 @@ export default function App() {
   const [activeFilter, setActiveFilter] = useState('commercial');
   const [language, setLanguage] = useState('it');
   const [activeOverlay, setActiveOverlay] = useState(null); // null, 'about', 'services'
+  const [activeLegal, setActiveLegal] = useState(null); // null, 'privacy', 'cookie'
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const lastOpenedProjectIdRef = useRef(null);
 
   // Disable scroll when overlay, project modal, or hamburger menu is active
   useEffect(() => {
-    const shouldLock = activeOverlay || selectedProject || isMenuOpen;
+    const shouldLock = activeOverlay || selectedProject || isMenuOpen || activeLegal;
     if (shouldLock) {
       document.documentElement.classList.add('scroll-locked');
       document.body.classList.add('scroll-locked');
@@ -55,7 +57,7 @@ export default function App() {
       document.documentElement.classList.remove('scroll-locked');
       document.body.classList.remove('scroll-locked');
     };
-  }, [activeOverlay, selectedProject, isMenuOpen]);
+  }, [activeOverlay, selectedProject, isMenuOpen, activeLegal]);
 
   // Return focus to the project card that opened the modal once the modal is closed
   useEffect(() => {
@@ -225,7 +227,11 @@ export default function App() {
       </main>
 
       {/* Redesigned minimal medicine-insert style Footer */}
-      <Footer language={language} />
+      <Footer 
+        language={language} 
+        onOpenPrivacy={() => setActiveLegal('privacy')}
+        onOpenCookie={() => setActiveLegal('cookie')}
+      />
       
       {/* Chi Siamo Overlay Panel */}
       {activeOverlay === 'about' && (
@@ -258,6 +264,15 @@ export default function App() {
         onClose={() => setSelectedProject(null)}
         language={language}
       />
+
+      {/* Privacy / Cookie Legal Overlay */}
+      {activeLegal && (
+        <LegalOverlay 
+          type={activeLegal} 
+          language={language} 
+          onClose={() => setActiveLegal(null)} 
+        />
+      )}
     </>
   );
 }

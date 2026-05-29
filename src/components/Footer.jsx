@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer({ language }) {
+export default function Footer({ language, onOpenPrivacy, onOpenCookie }) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -14,11 +14,11 @@ export default function Footer({ language }) {
         
         {/* Row 2: Navigation & Social Links */}
         <div className="footer-links-row">
-          <a href="#privacy" className="footer-link" onClick={(e) => e.preventDefault()}>
+          <a href="#privacy" className="footer-link" onClick={(e) => { e.preventDefault(); onOpenPrivacy(); }}>
             Privacy Policy
           </a>
           <span className="footer-bullet">•</span>
-          <a href="#cookie" className="footer-link" onClick={(e) => e.preventDefault()}>
+          <a href="#cookie" className="footer-link" onClick={(e) => { e.preventDefault(); onOpenCookie(); }}>
             Cookie Policy
           </a>
           <span className="footer-bullet">•</span>
