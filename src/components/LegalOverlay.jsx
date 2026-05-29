@@ -200,7 +200,7 @@ export default function LegalOverlay({ type, language, onClose }) {
                 <ul>
                   <li>
                     <strong>Cookie Tecnici e di Sessione (Strettamente Necessari):</strong> <br />
-                    Sono fondamentali per consentire la navigazione all'interno del sito e l'utilizzo delle sue funzionalità (ad esempio, per la gestione dell'accesso autenticato all'interno del pannello amministrativo `/piropiru`). Senza questi cookie, il sito o alcune sue aree non potrebbero funzionare correttamente.
+                    Sono fondamentali per consentire la navigazione all'interno del sito e l'utilizzo delle sue funzionalità (ad esempio, per la gestione dell'accesso autenticato all'area riservata). Senza questi cookie, il sito o alcune sue aree non potrebbero funzionare correttamente.
                   </li>
                   <li>
                     <strong>Cookie di Terze Parti (Vimeo):</strong> <br />
@@ -236,7 +236,7 @@ export default function LegalOverlay({ type, language, onClose }) {
                 <ul>
                   <li>
                     <strong>Technical and Session Cookies (Strictly Necessary):</strong> <br />
-                    These are essential to allow navigation throughout the website and to use its features (for example, to manage authenticated access inside the administrative panel `/piropiru`). Without these cookies, the site or some of its sections could not function properly.
+                    These are essential to allow navigation throughout the website and to use its features (for example, to manage authenticated access inside the administrative area). Without these cookies, the site or some of its sections could not function properly.
                   </li>
                   <li>
                     <strong>Third-Party Cookies (Vimeo):</strong> <br />
