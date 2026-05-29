@@ -75,7 +75,6 @@ function WorkItem({ project, onOpen, index, language }) {
       <div className="grid-item-info">
         <div className="grid-item-meta">
           <span>{getCategoryLabel(project.category)}</span>
-          <span>{project.year}</span>
         </div>
         <h3 className="grid-item-title">{project.title}</h3>
         <p className="grid-item-director">
